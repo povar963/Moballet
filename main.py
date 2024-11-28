@@ -384,6 +384,7 @@ class Wallet(QMainWindow, Ui_MainWindow):
         self.money.setText(str(0 - sum(list_minuses) + sum(list_pluses)) + "₽")
         self.do_count_percent()
 
+
 if __name__ == '__main__':
     app = QApplication(sys.argv)
     ex = Wallet()
