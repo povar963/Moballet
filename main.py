@@ -136,7 +136,10 @@ class Wallet(QMainWindow, Ui_MainWindow):
     def do_count_percent(self):
         try:
             goal = self.goal.text()
-            percent = int(self.available.text()) / int(goal)
+            try:
+                percent = int(self.available.text()) / int(goal)
+            except ZeroDivisionError:
+                percent = 100
             self.procents.setRange(0, 100)
             if percent < 1:
                 self.procents.setValue(int(round(percent * 100)))
