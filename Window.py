@@ -690,7 +690,7 @@ class Ui_MainWindow(object):
         self.accept_bank.setGeometry(QtCore.QRect(225, 529, 23, 23))
         self.accept_bank.setText("")
         icon5 = QtGui.QIcon()
-        icon5.addPixmap(QtGui.QPixmap("фото/Tr1ёue.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
+        icon5.addPixmap(QtGui.QPixmap("фото/True.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
         self.accept_bank.setIcon(icon5)
         self.accept_bank.setObjectName("accept_bank")
         MainWindow.setCentralWidget(self.centralwidget)
